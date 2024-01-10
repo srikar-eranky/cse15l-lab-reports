@@ -1,8 +1,8 @@
 # Lab Report 1
 ---
-Here is a demonstration of the basic terminal commands cd, ls, and cat
+Here is a demonstration of the basic terminal commands `cd`, `ls`, and `cat`
 
-## Using cd:
+## Using `cd`:
 ---
 ### Without arguments:
 ![Image](cd_no_commands.png)
@@ -19,11 +19,24 @@ The prompt now shows up with "lecture1" before the dollar sign because the cd co
 
 The terminal produces this output because the cd command can only work with directories as arguments. A file is not a directory, so the computer cannot change the directory to a specific file. 
 
-## Using ls: 
+## Using `ls`: 
 ---
 ### Without arguments
+![Image](ls_no_args.png)
 
+The terminal outputs "lecture1" because the present working directory is `/home`. The ls command shows a list of all folders and files within the present working directory, so "lecture1" will be outputted because it is the only folder in the `/home` directory.
 
+### With directory argument:
+![Image](ls_directory_arg.png)
 
-## Using cat:
+The terminal outputs the 4 txt files because that is the list of files present in the `lecture1/messages` directory.
+
+### With file argument:
+![Image](ls_file_arg.png)
+
+The terminal just outputs the relative path to the file that was given as an argument to the ls command, because the file is the only element in that path.
+
+## Using `cat`:
 ---
+### Without arguments:
+
