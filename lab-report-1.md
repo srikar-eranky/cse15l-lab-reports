@@ -34,9 +34,21 @@ The terminal outputs the 4 txt files because that is the list of files present i
 ### With file argument:
 ![Image](ls_file_arg.png)
 
-The terminal just outputs the relative path to the file that was given as an argument to the ls command, because the file is the only element in that path.
+The terminal just outputs the relative path to the file that was given as an argument to the ls command, because the file is the only element in that path. In this case, the argument was the path to the "es-mx.txt" file, which is why that path was printed. The "es-mx.txt" file is in the messages folder, which is in the lecture1 folder. 
 
 ## Using `cat`:
 ---
 ### Without arguments:
+![Image](cat_no_args.png)
 
+There is no output, because the terminal begins to read from standard input. When the cat command is given no arguments, it reads from standard input.
+
+### With directory argument:
+![Image](cat_directory_arg.png)
+
+The terminal produces this output because the cat command is meant for concatenating files or printing out the contents of a file. When the cat command is given a directory, it won't know what to concatenate or print, so it produces the error message. 
+
+### With file argument:
+![Image](cat_file_arg.png)
+
+The terminal prints the contents of the file that was referred to by the path given as the argument. In this case, the path refers to the en-us.txt file, which has contents "Hello World!", which is why that is printed. 
