@@ -1,5 +1,7 @@
 # Lab Report 1
 ---
+Can be accessed at https://srikar-eranky.github.io/cse15l-lab-reports/lab-report-1
+
 Here is a demonstration of the basic terminal commands `cd`, `ls`, and `cat`
 
 ## Using `cd`:
