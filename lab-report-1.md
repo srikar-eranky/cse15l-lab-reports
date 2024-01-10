@@ -62,7 +62,7 @@ There is no output, because the terminal begins to read from standard input. Whe
 
 **Working directory:** `/home/lecture1/messages/`
 
-The terminal produces this output because the cat command is meant for concatenating files or printing out the contents of a file. When the cat command is given a directory, it won't know what to concatenate or print, so it produces the error message. 
+The terminal produces this output because the cat command is meant for concatenating files or printing out the contents of a file. When the cat command is given a directory, it won't know what to concatenate or print, so it produces the error message. This is an error because a different argument than expected was given.
 
 ### With file argument:
 ![Image](cat_file_arg.png)
