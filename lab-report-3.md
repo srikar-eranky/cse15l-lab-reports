@@ -37,7 +37,7 @@ class Handler implements URLHandler {
     }
 }
 ```
-## Part 2 - The Server:
+## Part 1 - The Server:
 ---
 
 ### One message added:
@@ -50,7 +50,7 @@ When running the server, the `handleRequest()` method is called. This method tak
 
 When running the server, the `handleRequest()` method is called. This method takes the url as an argument, and parses the url so that it can get the message and the user. It then prints out the message and the user in the format `<user>: <message>`. There is one field in the class - an ArrayList of Strings. This keeps track of all the messages that have been added, and when the `/add-message` path is called, the ArrayList gets updated with the message that was added. Iniitally the value is `null`, but once the method is called, the value of the message that was added is appeneded to the ArrayList. In this case, the value of the ArrayList is `{"seranky: hello", "jpolitz: hi how are you"}`. 
 
-## Part 3 - Private and Public Keys
+## Part 2 - Private and Public Keys
 ---
 
 ### Private Key
@@ -65,3 +65,6 @@ The public key in the ieng6 directory is stored in the absolute path `/home/linu
 
 ### SSH Login Without Password
 ![Image](login_without_pass.png)
+
+### Part 3 - What Was Learned:
+I learned how to create an ssh key, make a new directory for the key, and copy the file contents into a file in that directory. I learned how to use the `mkdir` and `scp` commands on the terminal.
