@@ -43,11 +43,11 @@ class Handler implements URLHandler {
 ### One message added:
 ![Image](one_output.png)
 
-When running the server, the `handleRequest()` method is called. This method takes the url as an argument, and parses the url so that it can get the message and the user. It then prints out the message and the user in the format `<user>: <message>`. There is one field in the class - an ArrayList of Strings. This keeps track of all the messages that have been added, and when the `/add-message` path is called, the ArrayList gets updated with the message that was added. Iniitally the value is `null`, but once the method is called, the value of the message that was added is appeneded to the ArrayList. 
+When running the server, the `handleRequest()` method is called. This method takes the url as an argument, and parses the url so that it can get the message and the user. It then prints out the message and the user in the format `<user>: <message>`. There is one field in the class - an ArrayList of Strings. This keeps track of all the messages that have been added, and when the `/add-message` path is called, the ArrayList gets updated with the message that was added. Iniitally the value is `null`, but once the method is called, the value of the message that was added is appeneded to the ArrayList. In this case, the value of the ArrayList is `{"seranky: hello"}`. 
 
 ### Multiple messages added:
 ![Image](multiple_output.png)
 
-When running the server, the `handleRequest()` method is called. This method takes the url as an argument, and parses the url so that it can get the message and the user. It then prints out the message and the user in the format `<user>: <message>`. There is one field in the class - an ArrayList of Strings. This keeps track of all the messages that have been added, and when the `/add-message` path is called, the ArrayList gets updated with the message that was added. Iniitally the value is `null`, but once the method is called, the value of the message that was added is appeneded to the ArrayList. 
+When running the server, the `handleRequest()` method is called. This method takes the url as an argument, and parses the url so that it can get the message and the user. It then prints out the message and the user in the format `<user>: <message>`. There is one field in the class - an ArrayList of Strings. This keeps track of all the messages that have been added, and when the `/add-message` path is called, the ArrayList gets updated with the message that was added. Iniitally the value is `null`, but once the method is called, the value of the message that was added is appeneded to the ArrayList. In this case, the value of the ArrayList is `{"seranky: hello", "jpolitz: hi how are you"}`. 
 
 
