@@ -2,15 +2,15 @@
 
 ## Code for ChatServer:
 ---
+```
+import java.io.IOException;
+import java.net.URI;
+import java.util.ArrayList;
 
-`import java.io.IOException;` <br />
-`import java.net.URI;` <br />
-`import java.util.ArrayList;` <br />
-
-`class Handler implements URLHandler {` <br />
-    * `// The one bit of state on the server: a number that will be manipulated by` <br />
-    * `// various requests.` <br />
-    * `ArrayList<String> arr = new ArrayList<String>();` <br />
+class Handler implements URLHandler {
+    // The one bit of state on the server: a number that will be manipulated by
+    // various requests.
+    ArrayList<String> arr = new ArrayList<String>();
 
     public String handleRequest(URI url) {
         String path = url.getPath();
@@ -37,4 +37,5 @@
         }
         return "Path does not exist";
     }
-`}`
+}
+```
