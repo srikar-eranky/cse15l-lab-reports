@@ -39,3 +39,13 @@ class Handler implements URLHandler {
     }
 }
 ```
+## Screenshots of Server Output:
+---
+
+### One message added:
+
+
+
+### Multiple messages added:
+
+
