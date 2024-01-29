@@ -1,4 +1,9 @@
 # Lab Report 3
+---
+
+This report demonstrates how to use a server to track chat messages, as well as accessing public and private ssh keys. 
+
+Can be accessed at https://srikar-eranky.github.io/cse15l-lab-reports/lab-report-3
 
 ## ChatServer Code:
 ---
