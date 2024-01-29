@@ -11,7 +11,7 @@ Here is a demonstration of the basic terminal commands `cd`, `ls`, and `cat`
 
 **Working directory:** `/home`
 
-The cd command changes directory into another folder or directory. If no arguments are given, the computer doesn't know which directory to change into, so it won't produce any output or change the directory
+The cd command changes directory into another folder or directory. If no arguments are given, the terminal changes directory to the root folder, or the home folder.
 
 ### With directory as argument:
 ![Image](cd_directory_arg.png)
