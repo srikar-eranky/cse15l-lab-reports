@@ -43,9 +43,8 @@ class Handler implements URLHandler {
 ---
 
 ### One message added:
-
-
+![Image](one_output.png)
 
 ### Multiple messages added:
-
+![Image](multiple_output.png)
 
