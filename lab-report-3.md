@@ -1,4 +1,4 @@
-# Lab Report 3
+# Lab Report 2
 ---
 
 This report demonstrates how to use a server to track chat messages, as well as accessing public and private ssh keys. 
