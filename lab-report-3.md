@@ -2,17 +2,15 @@
 
 ## Code for ChatServer:
 ---
-``
-import java.io.IOException;
-import java.net.URI;
-import java.util.ArrayList;
-``
-``
-class Handler implements URLHandler {
-    // The one bit of state on the server: a number that will be manipulated by
-    // various requests.
-    ArrayList<String> arr = new ArrayList<String>();
-``
+
+`import java.io.IOException;` <br />
+`import java.net.URI;` <br />
+`import java.util.ArrayList;` <br />
+
+`class Handler implements URLHandler {` <br />
+    * `// The one bit of state on the server: a number that will be manipulated by` <br />
+    * `// various requests.` <br />
+    * `ArrayList<String> arr = new ArrayList<String>();` <br />
 
     public String handleRequest(URI url) {
         String path = url.getPath();
@@ -38,20 +36,5 @@ class Handler implements URLHandler {
             return finalStr;
         }
         return "Path does not exist";
-    }
-`}`
-
-``
-class ChatServer { <br />
-    public static void main(String[] args) throws IOException {
-        if(args.length == 0){
-            System.out.println("Missing port number! Try any number between 1024 to 49151");
-            return;
-        }
-``
-        `int port = Integer.parseInt(args[0]);`
-
-        Server.start(port, new Handler());
-
     }
 `}`
