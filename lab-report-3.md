@@ -8,8 +8,6 @@ import java.net.URI;
 import java.util.ArrayList;
 
 class Handler implements URLHandler {
-    // The one bit of state on the server: a number that will be manipulated by
-    // various requests.
     ArrayList<String> arr = new ArrayList<String>();
 
     public String handleRequest(URI url) {
@@ -44,6 +42,8 @@ class Handler implements URLHandler {
 
 ### One message added:
 ![Image](one_output.png)
+
+When running the server, the `handleRequest()` method is called. This method takes the url as an argument, and parses the url so that it can get the message and the user. It then prints out the message and the user in the format `<user>: <message>`. There is one field in the class - an ArrayList of Strings. This keeps track of all the messages that have been added, and the method returns all the Strings in the array in one final String. This is what is outputted by the server when it adds a message. 
 
 ### Multiple messages added:
 ![Image](multiple_output.png)
