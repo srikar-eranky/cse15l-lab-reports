@@ -35,3 +35,8 @@ for(int i = 0; i < arr.length / 2; i += 1) {
 }
 ```
 The fix saves the data that is being replaced by the for loop. Since the data gets saved, it can now be used to replace the previous elements when reversing. 
+
+## The `less` command:
+### `-E` option: 
+`less -E base-pair.txt`
+`less -E 911report`
