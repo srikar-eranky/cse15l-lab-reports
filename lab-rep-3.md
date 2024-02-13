@@ -38,9 +38,10 @@ The fix saves the data that is being replaced by the for loop. Since the data ge
 
 ## The `less` command:
 ### `-E` option: 
-Command:
+#### Command:
 `less -E base-pair.txt`
-Output:
+
+#### Output:
 ```
 biomed/1471-2091-3-4.txt
 biomed/1471-2105-2-8.txt
@@ -68,10 +69,45 @@ biomed/1471-2164-3-7.txt
 ...
 ```
 The `less` command prints the contents of the file that fit to the size of the terminal, and you can scroll down to access the rest of the contents after it is truncated. It is useful because the output gets truncated, so you don't have to read outputs of large files.
+
 Source: [Link](https://eng.libretexts.org/Bookshelves/Computer_Science/Operating_Systems/Linux_-_The_Penguin_Marches_On_(McClanahan)/05%3A_File_and_Directory_Management/3.06%3A_Working_with_Files_and_Directories/3.06.02%3A_Working_with_Files_and_Directories_-_less-more_Command)
-Command:
+
+#### Command:
 `less -E 911report/`
-Output:
+
+#### Output:
 `911report is not a directory`
 The `less` command only works with files, and since `911report` is a directory, the command won't work.
-Source: ChatGPT
+Source: ChatGPT - used to verify output
+[!Image](chatgpt.png)
+
+#### Command:
+`less -f biomed-sizes.txt`
+
+#### Output:
+```
+432    3380   24112 biomed/1468-6708-3-1.txt
+533    3630   29585 biomed/1468-6708-3-10.txt
+296    2166   16882 biomed/1468-6708-3-3.txt
+547    4301   31378 biomed/1468-6708-3-4.txt
+317    2312   18114 biomed/1468-6708-3-7.txt
+411    3181   24028 biomed/1471-2091-2-10.txt
+615    4684   35103 biomed/1471-2091-2-11.txt
+515    3287   24851 biomed/1471-2091-2-12.txt
+564    3550   27970 biomed/1471-2091-2-13.txt
+339    2496   18716 biomed/1471-2091-2-16.txt
+826    5832   45414 biomed/1471-2091-2-5.txt
+501    3167   25458 biomed/1471-2091-2-7.txt
+481    3637   25298 biomed/1471-2091-2-9.txt
+537    4002   29139 biomed/1471-2091-3-13.txt
+932    7125   54849 biomed/1471-2091-3-14.txt
+673    4858   34209 biomed/1471-2091-3-15.txt
+702    5011   35953 biomed/1471-2091-3-16.txt
+642    4253   29469 biomed/1471-2091-3-17.txt
+708    5587   40558 biomed/1471-2091-3-18.txt
+755    5001   40379 biomed/1471-2091-3-22.txt
+605    4616   33815 biomed/1471-2091-3-23.txt
+699    4531   34168 biomed/1471-2091-3-30.txt
+1063    7146   56000 biomed/1471-2091-3-31.txt
+```
+The `less -f` command prints the truncated output of the files to the terminal, and is useful because long outputs get cut short.
