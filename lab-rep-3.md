@@ -38,5 +38,40 @@ The fix saves the data that is being replaced by the for loop. Since the data ge
 
 ## The `less` command:
 ### `-E` option: 
+Command:
 `less -E base-pair.txt`
-`less -E 911report`
+Output:
+```
+biomed/1471-2091-3-4.txt
+biomed/1471-2105-2-8.txt
+biomed/1471-2105-2-9.txt
+biomed/1471-2105-3-18.txt
+biomed/1471-2105-3-2.txt
+biomed/1471-2105-3-24.txt
+biomed/1471-2105-4-27.txt
+biomed/1471-2121-1-2.txt
+biomed/1471-2121-3-10.txt
+biomed/1471-213X-1-4.txt
+biomed/1471-2156-2-17.txt
+biomed/1471-2156-2-3.txt
+biomed/1471-2156-2-7.txt
+biomed/1471-2156-3-16.txt
+biomed/1471-2156-3-4.txt
+biomed/1471-2164-2-1.txt
+biomed/1471-2164-2-4.txt
+biomed/1471-2164-2-7.txt
+biomed/1471-2164-3-13.txt
+biomed/1471-2164-3-31.txt
+biomed/1471-2164-3-35.txt
+biomed/1471-2164-3-6.txt
+biomed/1471-2164-3-7.txt
+...
+```
+The `less` command prints the contents of the file that fit to the size of the terminal, and you can scroll down to access the rest of the contents after it is truncated. It is useful because the output gets truncated, so you don't have to read outputs of large files.
+Source: [Link](https://eng.libretexts.org/Bookshelves/Computer_Science/Operating_Systems/Linux_-_The_Penguin_Marches_On_(McClanahan)/05%3A_File_and_Directory_Management/3.06%3A_Working_with_Files_and_Directories/3.06.02%3A_Working_with_Files_and_Directories_-_less-more_Command)
+Command:
+`less -E 911report/`
+Output:
+`911report is not a directory`
+The `less` command only works with files, and since `911report` is a directory, the command won't work.
+Source: ChatGPT
