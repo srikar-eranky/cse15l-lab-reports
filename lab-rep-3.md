@@ -17,3 +17,21 @@ public void testReverseInPlace1() {
     assertArrayEquals(new int[]{ 3 }, input1);
 }
 ```
+### Symptom
+![Image](symptom.png)
+
+### Code Before Fix
+```
+for(int i = 0; i < arr.length; i += 1) {
+    arr[i] = arr[arr.length - i - 1];
+}
+```
+### Code After Fix
+```
+for(int i = 0; i < arr.length / 2; i += 1) {
+      int temp = arr[i];
+      arr[i] = arr[arr.length - i - 1];
+      arr[arr.length - i - 1] = temp;
+}
+```
+The fix saves the data that is being replaced by the for loop. Since the data gets saved, it can now be used to replace the previous elements when reversing. 
