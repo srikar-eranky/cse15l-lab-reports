@@ -1,6 +1,6 @@
 # Lab Report 3
 ---
-## ReverseInPlace Bug
+## Part 1 - Bugs:
 ### Failure-Inducing Output
 ```
 public void testReverseInPlace2(){
