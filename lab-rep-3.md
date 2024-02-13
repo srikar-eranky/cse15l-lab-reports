@@ -70,7 +70,7 @@ biomed/1471-2164-3-7.txt
 ```
 The `less` command prints the contents of the file that fit to the size of the terminal, and you can scroll down to access the rest of the contents after it is truncated. It is useful because the output gets truncated, so you don't have to read outputs of large files.
 
-Source: [Link](https://eng.libretexts.org/Bookshelves/Computer_Science/Operating_Systems/Linux_-_The_Penguin_Marches_On_(McClanahan)/05%3A_File_and_Directory_Management/3.06%3A_Working_with_Files_and_Directories/3.06.02%3A_Working_with_Files_and_Directories_-_less-more_Command)
+[Source](https://eng.libretexts.org/Bookshelves/Computer_Science/Operating_Systems/Linux_-_The_Penguin_Marches_On_(McClanahan)/05%3A_File_and_Directory_Management/3.06%3A_Working_with_Files_and_Directories/3.06.02%3A_Working_with_Files_and_Directories_-_less-more_Command)
 
 #### Command:
 `less -E 911report/`
@@ -79,8 +79,9 @@ Source: [Link](https://eng.libretexts.org/Bookshelves/Computer_Science/Operating
 `911report is not a directory`
 The `less` command only works with files, and since `911report` is a directory, the command won't work.
 Source: ChatGPT - used to verify output
-[!Image](chatgpt.png)
+![Image](chatgpt.png)
 
+### `-f` option:
 #### Command:
 `less -f biomed-sizes.txt`
 
@@ -110,4 +111,80 @@ Source: ChatGPT - used to verify output
 699    4531   34168 biomed/1471-2091-3-30.txt
 1063    7146   56000 biomed/1471-2091-3-31.txt
 ```
-The `less -f` command prints the truncated output of the files to the terminal, and is useful because long outputs get cut short.
+The `less -f` command prints the truncated output of the files to the terminal, and is useful because the `-f` option can be used to open non regular files.
+
+[Source](https://eng.libretexts.org/Bookshelves/Computer_Science/Operating_Systems/Linux_-_The_Penguin_Marches_On_(McClanahan)/05%3A_File_and_Directory_Management/3.06%3A_Working_with_Files_and_Directories/3.06.02%3A_Working_with_Files_and_Directories_-_less-more_Command)
+
+#### Command:
+`less -f government`
+
+#### Output:
+`read error (press RETURN)`
+The command cannot print the contents of the directory, even when `-f` is used. 
+
+### `-F` option:
+
+#### Command:
+`less -F entire-file.txt`
+
+#### Output:
+```
+This file's contents can fit
+On one entire terminal screen
+
+It should end the less command after
+It gets printed
+(base) srikar@Srikars-MacBook-Pro-2 technical %
+```
+The `-F` option automatically exits the window opened by `less` if the entire file can fit on the screen. This is useful, because for files with a small output, it can be shown without having to exit the window.
+
+[Source](https://eng.libretexts.org/Bookshelves/Computer_Science/Operating_Systems/Linux_-_The_Penguin_Marches_On_(McClanahan)/05%3A_File_and_Directory_Management/3.06%3A_Working_with_Files_and_Directories/3.06.02%3A_Working_with_Files_and_Directories_-_less-more_Command)
+
+#### Command:
+`less -F biomed`
+
+#### Output:
+`biomed is a directory`
+`less -F` cannot be used to open the biomed directory because it can only be used on files.
+
+### `-p` option:
+
+#### Command:
+`less -p 2001 base-pair.txt`
+
+#### Outuput:
+```
+biomed/1477-7827-1-23.txt
+biomed/ar297.txt
+biomed/ar409.txt
+biomed/ar774.txt
+biomed/bcr570.txt
+biomed/bcr571.txt
+biomed/bcr602.txt
+biomed/bcr631.txt
+biomed/gb-2000-1-1-research002.txt
+biomed/gb-2001-2-12-research0054.txt
+biomed/gb-2001-2-3-research0008.txt
+biomed/gb-2001-2-4-research0010.txt
+biomed/gb-2001-2-4-research0011.txt
+biomed/gb-2001-2-4-research0014.txt
+biomed/gb-2001-2-6-research0021.txt
+biomed/gb-2001-2-7-research0025.txt
+biomed/gb-2001-2-8-research0027.txt
+biomed/gb-2002-3-10-research0053.txt
+biomed/gb-2002-3-12-research0079.txt
+biomed/gb-2002-3-12-research0083.txt
+biomed/gb-2002-3-6-research0029.txt
+biomed/gb-2003-4-4-r24.txt
+biomed/rr196.txt
+```
+Occurrences of `2001` are higlighted in the terminal, and this is useful because it can be used to search for certain occurrences of a keyword or phrase within the file, and exactly where in the file they occur.
+
+[Source](https://eng.libretexts.org/Bookshelves/Computer_Science/Operating_Systems/Linux_-_The_Penguin_Marches_On_(McClanahan)/05%3A_File_and_Directory_Management/3.06%3A_Working_with_Files_and_Directories/3.06.02%3A_Working_with_Files_and_Directories_-_less-more_Command)
+
+#### Command:
+`less -p 1468 biomed`
+
+#### Output:
+`biomed is a directory`
+The command doesn't work on a directory
