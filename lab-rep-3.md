@@ -68,9 +68,9 @@ biomed/1471-2164-3-31.txt
 biomed/1471-2164-3-35.txt
 biomed/1471-2164-3-6.txt
 biomed/1471-2164-3-7.txt
-...
+... (output continued)
 ```
-The `less` command prints the contents of the file that fit to the size of the terminal, and you can scroll down to access the rest of the contents after it is truncated. It is useful because the output gets truncated, so you don't have to read outputs of large files.
+The `less -E` option prints the contents of the file that fit to the size of the terminal, and you can scroll down to access the rest of the contents after it is truncated. It is useful because the output gets truncated, so you don't have to read outputs of large files.
 
 [Source](https://eng.libretexts.org/Bookshelves/Computer_Science/Operating_Systems/Linux_-_The_Penguin_Marches_On_(McClanahan)/05%3A_File_and_Directory_Management/3.06%3A_Working_with_Files_and_Directories/3.06.02%3A_Working_with_Files_and_Directories_-_less-more_Command)
 
@@ -81,6 +81,7 @@ The `less` command prints the contents of the file that fit to the size of the t
 `911report is not a directory`
 
 The `less` command only works with files, and since `911report` is a directory, the command won't work.
+
 Source: ChatGPT - used to verify output
 ![Image](chatgpt.png)
 
@@ -113,13 +114,14 @@ Source: ChatGPT - used to verify output
 605    4616   33815 biomed/1471-2091-3-23.txt
 699    4531   34168 biomed/1471-2091-3-30.txt
 1063    7146   56000 biomed/1471-2091-3-31.txt
+... (output continued)
 ```
 The `less -f` command prints the truncated output of the files to the terminal, and is useful because the `-f` option can be used to print the output of files that are non-regular.
 
 [Source](https://eng.libretexts.org/Bookshelves/Computer_Science/Operating_Systems/Linux_-_The_Penguin_Marches_On_(McClanahan)/05%3A_File_and_Directory_Management/3.06%3A_Working_with_Files_and_Directories/3.06.02%3A_Working_with_Files_and_Directories_-_less-more_Command)
 
 #### Command:
-`less -f government`
+`less -f government/`
 
 #### Output:
 `read error (press RETURN)`
@@ -145,7 +147,7 @@ The `-F` option automatically exits the window opened by `less` if the entire fi
 [Source](https://eng.libretexts.org/Bookshelves/Computer_Science/Operating_Systems/Linux_-_The_Penguin_Marches_On_(McClanahan)/05%3A_File_and_Directory_Management/3.06%3A_Working_with_Files_and_Directories/3.06.02%3A_Working_with_Files_and_Directories_-_less-more_Command)
 
 #### Command:
-`less -F biomed`
+`less -F biomed/`
 
 #### Output:
 `biomed is a directory`
@@ -183,14 +185,14 @@ biomed/gb-2002-3-6-research0029.txt
 biomed/gb-2003-4-4-r24.txt
 biomed/rr196.txt
 ```
-Occurrences of `2001` are higlighted in the terminal, and this is useful because it can be used to search for certain occurrences of a keyword or phrase within the file, and exactly where in the file they occur.
+Occurrences of `2001` are higlighted in the terminal output, and this is useful because it can be used to search for certain occurrences of a keyword or phrase within the file, and exactly where in the file they occur.
 
 [Source](https://eng.libretexts.org/Bookshelves/Computer_Science/Operating_Systems/Linux_-_The_Penguin_Marches_On_(McClanahan)/05%3A_File_and_Directory_Management/3.06%3A_Working_with_Files_and_Directories/3.06.02%3A_Working_with_Files_and_Directories_-_less-more_Command)
 
 #### Command:
-`less -p 1468 biomed`
+`less -p 1468 biomed/`
 
 #### Output:
 `biomed is a directory`
 
-The command doesn't work on a directory
+The command doesn't work on a directory.
