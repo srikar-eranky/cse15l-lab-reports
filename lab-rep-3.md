@@ -77,6 +77,7 @@ The `less` command prints the contents of the file that fit to the size of the t
 
 #### Output:
 `911report is not a directory`
+
 The `less` command only works with files, and since `911report` is a directory, the command won't work.
 Source: ChatGPT - used to verify output
 ![Image](chatgpt.png)
@@ -120,6 +121,7 @@ The `less -f` command prints the truncated output of the files to the terminal, 
 
 #### Output:
 `read error (press RETURN)`
+
 The command cannot print the contents of the directory, even when `-f` is used. 
 
 ### `-F` option:
@@ -145,6 +147,7 @@ The `-F` option automatically exits the window opened by `less` if the entire fi
 
 #### Output:
 `biomed is a directory`
+
 `less -F` cannot be used to open the biomed directory because it can only be used on files.
 
 ### `-p` option:
@@ -187,4 +190,5 @@ Occurrences of `2001` are higlighted in the terminal, and this is useful because
 
 #### Output:
 `biomed is a directory`
+
 The command doesn't work on a directory
