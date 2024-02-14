@@ -112,7 +112,7 @@ Source: ChatGPT - used to verify output
 699    4531   34168 biomed/1471-2091-3-30.txt
 1063    7146   56000 biomed/1471-2091-3-31.txt
 ```
-The `less -f` command prints the truncated output of the files to the terminal, and is useful because the `-f` option can be used to open non regular files.
+The `less -f` command prints the truncated output of the files to the terminal, and is useful because the `-f` option can be used to print the output of files that are non-regular.
 
 [Source](https://eng.libretexts.org/Bookshelves/Computer_Science/Operating_Systems/Linux_-_The_Penguin_Marches_On_(McClanahan)/05%3A_File_and_Directory_Management/3.06%3A_Working_with_Files_and_Directories/3.06.02%3A_Working_with_Files_and_Directories_-_less-more_Command)
 
