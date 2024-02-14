@@ -3,6 +3,7 @@
 ## Part 1 - Bugs:
 ### Failure-Inducing Output
 ```
+@Test
 public void testReverseInPlace2(){
     int[] input2 = {1,2,3,4};
     ArrayExamples.buggyReverseInPlace(input2);
@@ -11,6 +12,7 @@ public void testReverseInPlace2(){
 ```
 ### Non Failure-Inducing Output
 ```
+@Test
 public void testReverseInPlace1() {
     int[] input1 = { 3 };
     ArrayExamples.buggyReverseInPlace(input1);
