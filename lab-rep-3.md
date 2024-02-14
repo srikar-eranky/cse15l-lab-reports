@@ -1,6 +1,8 @@
 # Lab Report 3
 ---
 ## Part 1 - Bugs:
+
+The bug that I chose to inspect was the for the reverseInPlace() method for arrays. 
 ### Failure-Inducing Output
 ```
 @Test
@@ -36,7 +38,7 @@ for(int i = 0; i < arr.length / 2; i += 1) {
       arr[arr.length - i - 1] = temp;
 }
 ```
-The fix saves the data that is being replaced by the for loop. Since the data gets saved, it can now be used to replace the previous elements when reversing. 
+The fix saves the data that is being replaced by the for loop. Since the data gets saved, it can now be used to replace the previous elements when reversing. The fix also iterates up until halfway through the array, rather than the whole array. Otherwise, the elements that it is trying to reverse will get replaced, and the output would be wrong. 
 
 ## The `less` command:
 ### `-E` option: 
