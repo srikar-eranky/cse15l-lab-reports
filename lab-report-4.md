@@ -1,6 +1,8 @@
 # Lab Report 4
 ---
 
+This lab will focus on different keyboard shortcuts in terminal, and using those to edit a file in vim.
+
 ## Step 4:
 
 ![Image](step4.png)
