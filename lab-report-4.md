@@ -41,4 +41,4 @@ arrows to access that command and compile the java files. I did the same with th
 
 ![Image](step9.png)
 
-Keys pressed: `git add ListExamples.java<enter>, git commit -m "updated ListExamples.java<enter>, git push`. I added the changes from `ListExamples.java` onto the staging area, then committed those changes, then pushed those changes to github.
+Keys pressed: `git add ListExamples.java<enter>, git commit -m "updated ListExamples.java<enter>", git push`. I added the changes from `ListExamples.java` onto the staging area, then committed those changes, then pushed those changes to github.
