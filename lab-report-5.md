@@ -11,4 +11,6 @@ Second message:
 ![Image](second_call.png)
 
 ### TA Post:
-Thank you for the post. Are you returning the output string by chance? Find a way to save previous strings so that you can return all of them. You can use `curl "http://localhost:<port>/add-message?s=<message>&user=<user>"`.
+Thank you for the post. Are you returning the output string by chance? Find a way to save previous strings so that you can return all of them. You can use `curl "http://localhost:<port>/add-message?s=<message>&user=<user>"` without having to run the server in your browser.
+
+
