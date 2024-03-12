@@ -73,12 +73,7 @@ class Handler implements URLHandler {
                 user = userQuery[1];
             }
             String output = user + ": " + message + "\n";
-            arr.add(output);
-            String finalStr = "";
-            for(String s : arr){
-                finalStr += s;
-            }
-            return finalStr;
+            return output;
         }
         return "Path does not exist";
     }
