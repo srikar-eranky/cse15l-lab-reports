@@ -14,7 +14,7 @@ Second message:
 Thank you for the post. Are you returning the output string by chance? Find a way to save previous strings so that you can return all of them. You can use `curl "http://localhost:<port>/add-message?s=<message>&user=<user>"` without having to run the server in your browser, to check the output.
 
 ### 3. Student Fix:
-I (the student) created a bash script server.sh that compiles and runs the server, which ends up triggering the bug:
+I (the student) created a bash script `server.sh` that compiles and runs the server, which ends up triggering the bug:
 ```
 javac ChatServer.java Server.java
 echo $?
