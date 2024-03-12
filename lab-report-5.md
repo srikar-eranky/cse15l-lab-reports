@@ -23,6 +23,7 @@ java ChatServer 4000
 **Description of Bug:** The bug was that the previous output string was not being saved. The output string kept being changed and then returned, so it wouldn't return the rest of the chat history, only the most recent message. To fix the bug, I appended the output string to an ArrayList, then returned a final string that was the concatenation of every String in the ArrayList. 
 
 **Student Code Fix:**
+
 ![Image](fixed_code.png)
 
 **Updated Output:**
